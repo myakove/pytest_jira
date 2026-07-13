@@ -134,6 +134,9 @@ Besides a test marker, you can also use the added ``jira_issue`` fixture. This e
 and not just at the beginning of a test. The fixture return a boolean representing the state of the issue.
 If the issue isn't found, or the jira plugin isn't loaded, it returns ``None``.
 
+The same API is available at other pytest scopes via ``jira_issue_scope_class``,
+``jira_issue_scope_module``, ``jira_issue_scope_package``, and ``jira_issue_scope_session``.
+
 .. code:: python
 
     NICE_ANIMALS = ["bird", "cat", "dog"]
