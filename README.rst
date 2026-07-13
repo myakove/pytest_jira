@@ -131,7 +131,7 @@ Fixture usage
 -------------
 
 Besides a test marker, you can also use the added ``jira_issue`` fixture. This enables examining issue status mid test
-and not just at the beginning of a test. The fixture return a boolean representing the state of the issue.
+and not just at the beginning of a test. The fixture returns a boolean representing the state of the issue.
 If the issue isn't found, or the jira plugin isn't loaded, it returns ``None``.
 
 The same API is available at other pytest scopes via ``jira_issue_scope_class``,
